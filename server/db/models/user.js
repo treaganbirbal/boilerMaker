@@ -1,5 +1,5 @@
  const Sequelize = require('sequelize')
-const db = require('../db/database')
+const db = require('../db')
 
 const User = db.define('user', {
     email: {
@@ -24,6 +24,4 @@ const User = db.define('user', {
     }
 })
 
-module.export ={
-    User 
-}
+module.exports = User 
