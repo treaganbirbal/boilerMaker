@@ -51,7 +51,7 @@ export const logout = () => async dispatch => {
 const defaultUser = {}
 
 //reducer
-const dummyReducer = (state=defaultUser, action) => {
+ export default function(state=defaultUser, action) {
     switch (action.type){
         case GET_USER:
             return action.user;
